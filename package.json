@@ -1,0 +1,43 @@
+{
+  "name": "shopdanawa-mcp",
+  "version": "0.1.0",
+  "description": "샵다나와 PC 부품 검색 MCP 서버",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "src/index.ts",
+  "bin": {
+    "shopdanawa-mcp": "src/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "mcp",
+    "shopdanawa",
+    "danawa",
+    "pc-parts"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "cheerio": "^1.2.0",
+    "iconv-lite": "^0.7.2",
+    "node-cache": "^5.1.2",
+    "tsx": "^4.22.4",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
+  }
+}
